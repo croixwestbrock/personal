@@ -1,75 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .container {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 40px;
-        }
-        .project {
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        padding: 20px;
-        }
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Croix Westbrock - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <section id="about">
-        <div class="container">
-            <img src="images/profile.jpg" width="250" alt="Profile Photo">
-            <h1>Croix Westbrock</h1>
-            <p style="font-family: 'Courier New', Courier, monospace; color: brown">Student at Iowa State University</p>
-            <p>I am sophomore at Iowa State
-                University. This semester Fall 2023 I am taking the courses
-                ComS309, ComS311, ComS321, DS201, and GEOL100. 
-                I have experience working with Java, Javascript, and some Python,
-                and am currently learning HTML, CSS, and deeper into Python.
+      <div class="container pt-5">
+        <div class="row row-cols-1 row-cols-sm-2 g-2 pt-3">
+          <div class="col">
+            <img
+              class="centerimage"
+              src="images/profile.jpg"
+              width="60%"
+              alt="Profile Photo"
+            />
+            <h1 class="center pt-2">Croix Westbrock</h1>
+            <p
+              class="center"
+              style="
+                font-family: 'Courier New', Courier, monospace;
+                color: crimson;
+              "
+            >
+              Data Science, Iowa State University
             </p>
+          </div>
+          <div>
+            <p style="font-family:'Courier New', Courier, monospace; color: black">
+              Hi! My name is Croix Westbrock, and I am junior at Iowa State
+              University majoring in Data Science with a general business minor. <br> <br> I have
+              experience working in Python and SQL, and interests in computer science have also led me to learning Java 
+              development and web development which includes experience in HTML, Javascript, and CSS, React, Bootstrap, Express, Node.js, and MongoDB.<br><br>
+              Below I have details on some of the larger projects I have worked on in my 
+              time as a student at Iowa State University, as well as on my own time away from class!
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="images/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>The first project is related to develop a single Web page using
-                    only two technologies: HTML and CSS. The project consists on
-                    creating a single web page with a menu at the top know as
-                    Navitation Bar. We have to include text describing ourself and
-                    text describing the project. Additionally, we need to include
-                    two images: one image is of ourself and second image is anything
-                    related to the project itself.</p>
+      <div class="container">
+        <h2 class="pt-5">Data Science - Python</h2>
+
+        <div class="project">
+          <h3>Anomaly Detection Research - Research Experience for Undergraduates: ARA Project</h3>
+          <p class="projectdesc">
+            Through Research Experience for Undergraduates at Iowa State, I was able to gain the opportunity to work for the WiCI Research Center's ARA project during the Spring 2024 semester. During this time, I researched anomaly detection in time series weather data under my mentor, using data collected from two Iowa State locations: the Agronomy Farm and Wilson Hall. Some Python packages which I utilized included pandas, numpy, matplotlib, and sklearn.
+            I began by cleaning and preprocessing the data, resulting in cutting the Wilson Hall and Agronomy Farm data frames from containing 26 and 30 columns respectively down to the 8 and 9 most important columns in explaining variance. More specifically, this was done through use of PCA and visual analysis of correlations and various graphs created. I finished preprocessing by filled any missing values with mean values and scaling and normalizing both data sets.  
+            After having the data cleaned and ready for testing, I implemented VAR, IsolationForest, and DBSCAN models, then graphically displayed the returned anomalous data points on time series graphs of each of the location's columns to gain insight on what columns seemed to contibute heavily, randomly, or not much at all, to determining a point as anomolous.
+          </p>
+          <div class="row row-cols-1 row-cols-sm-2 g-2 pt-3">
+            <div class="col">
+              <p class="projectdesc">
+                After testing those models, I began experimenting with the ARIMA model in various ways. I first began by detemining what columns of each data set would be best for testing this model, as ARIMA is a univariate model and hence can only take one column of the data at a time. To determine this, I looked for the columns which had a visibly normal range which spiked occassionally. I chose 3 columns from each data set to put through ARIMA models. The way I went about these ARIMA models is significantly different from the previous models, however, in the sense of the train test split. 
+              </p>
+              <p class="projectdesc">
+                For these ARIMA models, I ran the model on each column for 4 different train test splits. The first was a simple random 20-80 train test split as a sort of base assessment. Second was a DBSCAN clustering split, with the training data being all the records which got put into some sort of cluster, which was around 10% of the total data, and all unclustered data being the test data. Next, we used an OPTICS clustering split in the same way as we used DBSCAN, with OPTICS producing 18% clustered data for our training split. Finally, we used K-Means clustering for our final split, where we K-Means clustered the data into 3 clusters before manually inspecting each cluster to determine which of the clusters contained most of the average data points, making that the training data, and making the clusters with mostly spiked data our testing data set. For each split of each column, we displayed two graphs showing what values were determined by the ARIMA model to be anomalous versus normal, as an example is shown to the right. 
+              </p>
             </div>
+            <div class="col">
+              <img class="centerimage py-2" src="./images/anomalies.png" alt="Anomalies" width="600px" />
+              <img class="centerimage py-2" src="./images/nonanomalies.png" alt="Non-Anomalies" width="600px" />
+            </div>
+          </div>
         </div>
+
+        <div class="project">
+          <h3>Movie Rating Predictor</h3>
+              <p class="projectdesc">
+                In this project, me and two classmates aimed to determine if you can accurately predict the rating of a video game based off of its charateristics. We began this by exploring the dataset we chose to work with and determine what attributes of a game would actually be useful to predicting its rating. We began with the release year, certificate, plot, title, number of rating votes, the rating itself, and 9 different game genres, each of boolean type for each game, where a game could have multiple genres. From here, we first removed unncessary columns, any duplicates, and records with missing values, and any game which had less than 100 votes on it. This brought our dataset from 20,800 records down to 3,315 records, and leaving the columns at rating, certificate, and all the different genres. All the genres were changed from true/false to 1/0, and we used one-hot encoding to create columns for each certificate option which could be represented by a 1 or a 0. Now that we had all our data besides the actual ratings into simple 1s and 0s, we began implementing different classifiers. 
+              </p>
+          <div class="row row-cols-1 row-cols-sm-2 g-2 pt-3">
+            <div class="col">
+              <p class="projectdesc">
+                The classifiers we used are shown to the right, and with these classifiers we used a stratified KFold with 2 splits to split the data due to the high variance in the number of games that each genre had, for example action and adventure had significantly more games than other genres. We then used the accuracy_score function from sklearn to determine the accuracy of each classifier compared to the real ratings. The results we found were that the Logistic Regression classifier worked the best of the classifiers, however is still only had a 45.7% accuracy rating. When compared to a random 1-10 guess which yields a 10% predicted accuracy, our classifiers and predictions were still significantly better than guessing, however due to its shortcomings with straight forward accuracy, we determined our project would not be able to hold up in real world implementation.
+              </p>
+            </div>
+            <div class="col">
+              <img class="centerimage" src="./images/gameclassifiers.png" alt="Classifiers" width="500px" />
+            </div>
+          </div>
+        </div>
+
+        <h2 class="pt-5">Java Development</h2>
+
+        <div class="project">
+          <h3>Solving Rush Hour</h3>
+              <p class="projectdesc">
+                The objective of this project was to take the common children's game Rush Hour and write algorithms based around winning the game in the shortest number of moves. 
+                This work was set up having the main class, GameBoard, along with three helper classes: Car, Pair, and HashKey. Car objects consisted of a car's number, whether it moves horizontal or vertical, and what grid spots it occupies. Pair defines moves, formatted as pairs of car id and the direction it moves: n, s, e, or w. HashKey is an altered HashKey to be used for Car objects. 
+                The algorithms discussed are all implemented in GameBoard. The setup of the board is given through files, which in GameBoard are read to define all the board's starting features. Files are formatted as the first line telling how many cars there are, followed by that number of additional lines, each defining a car's grid spots. The first of these cars' lines is for the car wanting to get out.
+              </p>
+          <div class="row row-cols-1 row-cols-sm-2 g-2">
+            <div class="col">
+              <p class="projectdesc">
+                The first of the large algorithms implemented was to get the plan for the shortest path of moves which wins the game. This was done using a modified version of Dijkstra's Algorithm while tracking the path along the way. A list of Pair objects showing the path followed is returned.
+              </p>
+              <p class="projectdesc">
+                The second large algorithm writen was written utilizing breadth-first-search logic to find the different number of paths that can solve the board in the smallest solvable number of steps. To do this, the algorithm takes the path which first solve the board, then mark the layer of that search as the shortest path layer, or the smallest amount of steps that the board is solvable in. The other paths are then followed through until they are either solved in that same number of steps and added to the count, or until they require more steps and are disregared. The count of paths which solved the board in the minimum move amount is returned.
+              </p>
+              <p class="projectdesc">
+                The final large algorithm, which was used as a helper method in the two main algorithms just described, was getting all the next possible board states of a given board. To do this, the method went through all the cars and determined whether it could move up, down, left, or right. For each possible move, a new GameBoard object was added to an ArrayList. Each GameBoard in this list only consists of one car moving one position from the starting board. After all moves for all cars are considered, that ArrayList is returned.
+              </p>
+            </div>
+            <div class="col">
+              <img class="centerimage" src="images/rushhour.jpeg" alt="Rush Hour" width="300px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="row row-cols-1 row-cols-sm-2 g-2 pt-3">
+            <div class="col">
+              <h3>Pacman Logic</h3>
+              <p class="projectdesc">
+                This project was used to work with and utilize inheritance in order to code the behavioral logic for PacMan each of the ghosts.
+                To do this, I created an AbstractActor class which would be the overall parent class overseeing all characters. 
+                The next layer of inheritance consists of PacMan and BasicGhost, both child classes of AbstractActor. The PacMan class was used to specify its specific movements in terms of turning, along with updating his location on the maze. 
+                BasicGhost defines the ways all the ghosts would move, in terms of getting and setting its mode: frightened, dead, or normal. This class also calculates the next cell that the ghost should go to based its mode, and if it is in chase mode, which ghost it is, as each ghost has a unique target calculation for catching PacMan while in chase mode. 
+                Finally, classes for each of the four ghosts were created as child classes of BasicGhost, which simply consisted of constructors in order to simply classify which ghost is which.
+              </p>
+            </div>
+            <div class="col">
+              <img class="centerimage" src="images/pacmangame.png" alt="PacMan Game" width="400px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="row row-cols-1 row-cols-sm-2 g-2 pt-3">
+            <div class="col">
+              <h3>Lines Game</h3>
+              <p class="projectdesc">
+                This project aimed to make a line connection game, where given a grid of line start and end points, one must connect all the lines without illegally crossing over any other lines. 
+                The logic for this was done using two Java classes, Util and LinesGame. Util holds features for setup such as reading a file with game descriptors in it and turning them into a list of LinesGame objects, creating the base line objects that the game begins with, and checks for whether there is a line segment or illegally crossing lines present. 
+                The LinesGame class works with individual games, holding the alterations of lines, tracking the number of moves, and checking if the user has won.
+              </p>
+            </div>
+            <div class="col">
+              <div class="row row-cols-2 row-cols-sm-2 g-2">
+                <div class="col"> <img class="centerimage" src="images/linesstart.png" alt="Game Start" width="90%" /> </div>
+                <div class="col"> <img class="centerimage" src="images/linessolved.png" alt="Game Solved" width="90%" /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="pt-5">Web Development</h2>
+
+        <div class="project">
+          <div class="row row-cols-1 row-cols-sm-2 g-2 pt-3">
+            <div class="col">
+              <h3>Golf Driver Shopping Catalog</h3>
+              <p class="projectdesc">
+                In this project, a classmate and I worked to create a webpage which simulates a shopping catalog for golf drivers. We designed this basing from a MongoDB database which homed all the information used throughout our webpage on all the 9 drivers we used. That database connected to a Node.js backend which pulled the data into a server, which we then would use hooks in our frontend to access that information. We implemented a React frontend which used these hooks to get all the data needed and display our webpage. In the webpage itself, we used a single page design, making buttons change variables to show and hide different sections rather than opening new webpages. All aspects of our webpage is one single site. We also used Bootstrap and other CSS for visual design and appeal.
+              </p>
+              <p class="projectdesc">
+                The different views we had began with the catalog view, which had a card for each driver, displaying image, name, price, rating, and option to add or remove from your cart. If a user clicks on one of these cards, the catalog view is hidden, and the full information for that specific driver is shown, which sees more specific information on product options for the driver itself, as well as design aspects and information to do with how the driver is made and what it helps with. After a user adds what they want to their cart, they can hit the check out button, which will hide everything else and pull up the checkout screen, where users can review what they have in their cart, and enter their payment information. Every input in payment information also has a validity check to ensure the user did not forget to enter anything or enter anything in an incorrect format, such as email not containing an @ symbol. If all these pass their checks when the user clicks submit, the order is placed. 
+              </p>
+              <p class="projectdesc">
+                Our website does not retain any information actually entered, nor does it actually place any real orders or charge any actual cards, for obvious reasons. 
+              </p>
+              <p class="projectdesc">
+                From there, the previous part is hidden and the user is shown an order summary containing all the information they entered, and the card number having X for all but the last 4 digits. The return button hides this summary and return the user to a cart view where the cart is reset to not having anything in it. In our navigation bar at the top of our page, there are 3 options: "View Catalog" and "Golf Driver Catalog" both take the user back to the catalog view with everything else hidden without resetting the user's cart, and "About" takes the user to a simple page showing myself and my classmate's information, along with the information of the professor and the class we coded this in.
+              </p>
+            </div>
+            <div class="col">
+              <img class="centerimage py-3" src="./images/webpagecatalog.png" alt="Main Page View" width="500px" />
+              <img class="centerimage py-3" src="./images/webpageindividual.png" alt="Specific Driver View" width="500px" />
+              <img class="centerimage py-3" src="./images/webpagecheckout.png" alt="Checkout View" width="500px" />
+              <img class="centerimage py-3" src="./images/webpagesummary.png" alt="Summary View" width="500px" />
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can reach me at croix24@iastate.edu</p>
-        </div>
+      <div class="container py-5">
+        <h2>Contact Me</h2>
+        <p>You can reach me via email at <a href="mailto:croix24@iastate.edu"> croix24@iastate.edu</a>!</p>
+      </div>
     </section>
-    <footer>
-        <p>&copy; 2023 Croix Westbrock</p>
+    <footer class="pt-4">
     </footer>
-</body>
-
+  </body>
 </html>
